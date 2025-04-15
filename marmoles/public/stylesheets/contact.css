@@ -1,0 +1,19 @@
+body {
+  padding-top: 86px;
+}
+
+main {
+  height: 80vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url('../assets/oficina.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+form {
+  background-color: #fbf7ef;
+  label {
+    padding-block: 0.5rem;
+  }
+}
