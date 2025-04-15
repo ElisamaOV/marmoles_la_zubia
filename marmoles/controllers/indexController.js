@@ -2,7 +2,11 @@ const connection = require('../config/db');
 
 class IndexController {
   showHome = (req, res) => {
-    res.send('Hola');
+    res.render('index');
+  };
+
+  showAbout = (req, res) => {
+    res.send('About');
   };
 }
 

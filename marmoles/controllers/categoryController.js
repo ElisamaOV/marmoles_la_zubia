@@ -1,4 +1,4 @@
 const connection = require('../config/db');
 
-class CategoryController {}
-module.exports = new CategoryController();
+class ProductsController {}
+module.exports = new ProductsController();
