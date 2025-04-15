@@ -44,15 +44,21 @@
     width: 650px;
     background-position: center;
     background-size: cover;
-    border-radius: 20px;
   }
 
   .col2 {
-    background-color: antiquewhite;
-    border-radius: 20px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(/assets/marmolsec1.jpg);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    padding: 2rem;
 
     p {
       font-weight: bold;
+      
     }
   }
 }
