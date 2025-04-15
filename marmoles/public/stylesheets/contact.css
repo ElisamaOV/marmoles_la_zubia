@@ -1,0 +1,10 @@
+body {
+  padding-top: 86px;
+}
+
+form {
+  background-color: #fbf7ef;
+  label {
+    padding-block: 0.5rem;
+  }
+}
