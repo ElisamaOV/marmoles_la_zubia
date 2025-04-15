@@ -6,7 +6,11 @@ class IndexController {
   };
 
   showAbout = (req, res) => {
-    res.send('About');
+    res.render('about');
+  };
+
+  showContact = (req, res) => {
+    res.render('contact');
   };
 }
 
