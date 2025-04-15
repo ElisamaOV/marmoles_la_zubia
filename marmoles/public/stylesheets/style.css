@@ -1,3 +1,58 @@
-body {
-  background-color: bisque;
+/* Carousel styling */
+#introCarousel,
+.carousel-inner,
+.carousel-item,
+.carousel-item.active {
+  height: 100vh;
+}
+
+.carousel-item:nth-child(1) {
+  background-image: url('/assets/fabricalazubia.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.carousel-item:nth-child(2) {
+  background-image: url('/assets/marmolblanco.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.carousel-item:nth-child(3) {
+  background-image: url('/assets/carrusel3.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+/* Ajuste de margen superior para dispositivos grandes si se requiere */
+@media (min-width: 992px) {
+  #introCarousel {
+    margin-top: -58.59px;
+  }
+}
+
+.section-2 {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+
+  .sec2img {
+    background-image: url(/assets/tiendasec2.jpg);
+    height: 650px;
+    width: 650px;
+    background-position: center;
+    background-size: cover;
+    border-radius: 20px;
+  }
+
+  .col2 {
+    background-color: antiquewhite;
+    border-radius: 20px;
+
+    p {
+      font-weight: bold;
+    }
+  }
 }
