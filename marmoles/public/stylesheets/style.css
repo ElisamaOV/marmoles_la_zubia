@@ -7,21 +7,21 @@
 }
 
 .carousel-item:nth-child(1) {
-  background-image: url('/assets/fabricalazubia.jpg');
+  background-image: url('/assets/carr1.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
 }
 
 .carousel-item:nth-child(2) {
-  background-image: url('/assets/marmolblanco.jpg');
+  background-image: url('/assets/carr2.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
 }
 
 .carousel-item:nth-child(3) {
-  background-image: url('/assets/carrusel3.jpg');
+  background-image: url('/assets/carr3.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
@@ -34,31 +34,22 @@
   }
 }
 
-.section-2 {
-  margin-top: 3rem;
-  margin-bottom: 3rem;
-
-  .sec2img {
-    background-image: url(/assets/tiendasec2.jpg);
-    height: 650px;
-    width: 650px;
-    background-position: center;
-    background-size: cover;
-  }
+.section-3 {
 
   .col2 {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(/assets/marmolsec1.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(/assets/baño.jpg);
     background-position: center;
     background-size: cover;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-content: center;
     padding: 2rem;
+    height: 400px;
 
     p {
       font-weight: bold;
       
     }
+  }
+
+  .col-3{
+    background-color: #F6F6F6;
   }
 }
