@@ -1,14 +1,136 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="es">
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>About</title>
-    <link rel="stylesheet" href="/stylesheets/style.css">
+    <link rel="stylesheet" href="/stylesheets/about.css" />
     <%- include('modules/links.ejs') %>
   </head>
-  <body>
-    <h1>Esto es el about</h1>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
+  <body class="d-flex flex-column min-vh-100">
+    <%- include('modules/navbar.ejs') %>
+    <main class="flex-fill">
+      <!-- <section class="section-1">
+        <h1
+          class="text-white d-flex justify-content-center align-items-center h-100 text-center"
+        >
+          Tradición en cada corte, perfección en cada detalle
+        </h1>
+      </section> -->
+
+      <section class="section-2">
+        <div class="container-fluid h-100">
+          <div class="row justify-content-center h-100 align-items-center">
+            <div class="col-12 col-lg-6 order-1 order-lg-0 col1"></div>
+
+            <div
+              class="col-12 col-lg-6 text-center order-0 order-lg-1 col-background d-flex justify-content-center align-items-center flex-column"
+            >
+              <h2 class="">Sobre Nosotros</h2>
+              <p class="fs-5">
+                En Mármoles La Zubia S.L. llevamos más de cuatro décadas
+                dedicados con pasión y profesionalismo a la elaboración de todo
+                tipo de piedra. Fundada en 1983 como una empresa familiar en La
+                Zubia, Granada, hemos crecido con un firme compromiso por la
+                calidad, el diseño y la seriedad en cada uno de nuestros
+                proyectos.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-3">
+        <div class="container-fluid">
+          <div class="row justify-content-center h-100 align-items-center">
+            <div
+              class="col-12 col-lg-6 d-flex justify-content-center col2 order-1 order-lg-1"
+            ></div>
+
+            <div
+              class="col-12 col-lg-6 text-center order-0 order-lg-0 col-background d-flex justify-content-center align-items-center flex-column"
+            >
+              <h2 class="">Nuestra Filosofía</h2>
+              <p class="fs-5">
+                Creemos en el valor de un trabajo bien hecho. Por eso, en
+                Mármoles La Zubia nos adaptamos a las necesidades de cada
+                cliente, estudiando cada proyecto de forma exclusiva. Aportamos
+                soluciones personalizadas, con asesoramiento constante desde la
+                idea inicial hasta la instalación final.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section-4">
+        <div class="container-fluid h-100">
+          <div class="row justify-content-center h-100 align-items-center">
+            <div class="col-12 col-lg-6 order-1 order-lg-0 col3"></div>
+
+            <div
+              class="col-12 col-lg-6 text-center order-0 order-lg-1 col-background d-flex justify-content-center align-items-center flex-column"
+            >
+              <h2 class="">Materiales y Acabados</h2>
+              <p class="fs-5">
+                Trabajamos con una amplia variedad de materiales de primera
+                calidad: mármol, granito, pizarra, arenisca, Silestone, Compac,
+                Quarella… Dominamos múltiples técnicas de acabado como el
+                brillo, mate, apomazado, al ácido y envejecido, lo que nos
+                permite adaptarnos a todo tipo de estilos y necesidades.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section-5">
+        <div class="container-fluid">
+          <div class="row justify-content-center h-100 align-items-center">
+            <div
+              class="col-12 col-lg-6 d-flex justify-content-center col2 order-1 order-lg-1 col4"
+            ></div>
+
+            <div
+              class="col-12 col-lg-6 text-center order-0 order-lg-0 col-background d-flex justify-content-center align-items-center flex-column"
+            >
+              <h2 class="">Experiencia e Innovación</h2>
+              <p class="fs-5">
+                La experiencia adquirida durante más de 20 años nos ha permitido
+                evolucionar en materiales, técnicas, texturas y diseño. Hoy
+                contamos con instalaciones modernas que reflejan esta evolución
+                y que están preparadas para ofrecer el mejor servicio, uniendo
+                tradición y vanguardia en cada proyecto.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section-6">
+        <div class="container-fluid h-100">
+          <div class="row justify-content-center h-100 align-items-center">
+            <div class="col-12 col-lg-6 order-1 order-lg-0 col5"></div>
+
+            <div
+              class="col-12 col-lg-6 text-center order-0 order-lg-1 col-background d-flex justify-content-center align-items-center flex-column"
+            >
+              <h2 class="">Compromiso con la Calidad</h2>
+              <p class="fs-5">
+                La calidad no es solo una promesa, es nuestro sello. Cada pieza
+                que elaboramos representa nuestra dedicación al detalle y
+                nuestro respeto por los materiales nobles. En Mármoles La Zubia
+                cada trabajo es una obra que habla por nosotros.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <%- include('modules/footer.ejs') %>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
