@@ -168,6 +168,20 @@
 
 
 /* Capa oscura y texto */
+
+.section-5 .sec5-col1:hover .overlay, 
+.section-5 .sec5-col2:hover .overlay, 
+.section-5 .sec5-col3:hover .overlay, 
+.section-5 .sec5-col4:hover .overlay, 
+.section-5 .sec5-col5:hover .overlay, 
+.section-5 .sec5-col6:hover .overlay, 
+.section-5 .sec5-col7:hover .overlay, 
+.section-5 .sec5-col8:hover .overlay {
+  opacity: 1; /* Muestra la capa oscura y el texto al pasar el ratón */
+}
+
+
+/* Capa oscura y texto */
 .section-5 .overlay {
   position: absolute;
   top: 0;
@@ -189,13 +203,169 @@
   font-weight: bold;
 }
 
-.section-5 .sec5-col1:hover .overlay, 
-.section-5 .sec5-col2:hover .overlay, 
-.section-5 .sec5-col3:hover .overlay, 
-.section-5 .sec5-col4:hover .overlay, 
-.section-5 .sec5-col5:hover .overlay, 
-.section-5 .sec5-col6:hover .overlay, 
-.section-5 .sec5-col7:hover .overlay, 
-.section-5 .sec5-col8:hover .overlay {
+
+/* categoria granitos */
+.section-5 .sec5-col2-1, .section-5 .sec5-col2-2, .section-5 .sec5-col2-3, .section-5 .sec5-col2-4, 
+.section-5 .sec5-col2-5, .section-5 .sec5-col2-6, .section-5 .sec5-col2-7, .section-5 .sec5-col2-8 {
+  cursor: pointer;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 400px;
+  height: 400px;
+  position: relative;
+}
+
+.section-5 .sec5-col2-1 {
+  background-image: url(/assets/granito/azulnoche.jpg);
+}
+.section-5 .sec5-col2-2 {
+  background-image: url(/assets/granito/blancocristal.jpg);
+}
+.section-5 .sec5-col2-3 {
+  background-image: url(/assets/granito/cremaporriño.jpg);
+}
+.section-5 .sec5-col2-4 {
+  background-image: url(/assets/granito/labradorclaro.jpg);
+}
+.section-5 .sec5-col2-5 {
+  background-image: url(/assets/granito/labradoroscuro.jpg);
+}
+.section-5 .sec5-col2-6 {
+  background-image: url(/assets/granito/negrointenso.jpg);
+}
+.section-5 .sec5-col2-7 {
+  background-image: url(/assets/granito/negrosudafrica.jpg);
+}
+.section-5 .sec5-col2-8 {
+  background-image: url(/assets/granito/rosaporriño.jpg);
+}
+
+
+.section-5 .sec5-col2-1:hover .overlay, 
+.section-5 .sec5-col2-2:hover .overlay, 
+.section-5 .sec5-col2-3:hover .overlay, 
+.section-5 .sec5-col2-4:hover .overlay, 
+.section-5 .sec5-col2-5:hover .overlay, 
+.section-5 .sec5-col2-6:hover .overlay, 
+.section-5 .sec5-col2-7:hover .overlay, 
+.section-5 .sec5-col2-8:hover .overlay {
   opacity: 1; /* Muestra la capa oscura y el texto al pasar el ratón */
 }
+
+/* categoría acabados */
+
+.section-5 .sec5-col3-1, .section-5 .sec5-col3-2, .section-5 .sec5-col3-3, .section-5 .sec5-col3-4, 
+.section-5 .sec5-col3-5, .section-5 .sec5-col3-6, .section-5 .sec5-col3-7, .section-5 .sec5-col3-8 {
+  cursor: pointer;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 400px;
+  height: 400px;
+  position: relative;
+}
+
+.section-5 .sec5-col3-1 {
+  background-image: url(/assets/acabados/abujardado.jpg);
+}
+.section-5 .sec5-col3-2 {
+  background-image: url(/assets/acabados/abujardado2.jpg);
+}
+.section-5 .sec5-col3-3 {
+  background-image: url(/assets/acabados/apomazado.jpg);
+}
+.section-5 .sec5-col3-4 {
+  background-image: url(/assets/acabados/apomazado2.jpg);
+}
+.section-5 .sec5-col3-5 {
+  background-image: url(/assets/acabados/envejecido.jpg);
+}
+.section-5 .sec5-col3-6 {
+  background-image: url(/assets/acabados/mate.jpg);
+}
+.section-5 .sec5-col3-7 {
+  background-image: url(/assets/acabados/pulido.jpg);
+}
+.section-5 .sec5-col3-8 {
+  background-image: url(/assets/acabados/pulido2.jpg);
+}
+
+
+.section-5 .sec5-col3-1:hover .overlay, 
+.section-5 .sec5-col3-2:hover .overlay, 
+.section-5 .sec5-col3-3:hover .overlay, 
+.section-5 .sec5-col3-4:hover .overlay, 
+.section-5 .sec5-col3-5:hover .overlay, 
+.section-5 .sec5-col3-6:hover .overlay, 
+.section-5 .sec5-col3-7:hover .overlay, 
+.section-5 .sec5-col3-8:hover .overlay {
+  opacity: 1; /* Muestra la capa oscura y el texto al pasar el ratón */
+}
+
+.radio-button-container {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.radio-button {
+  display: inline-block;
+  position: relative;
+  cursor: pointer;
+}
+
+.radio-button__input {
+  position: absolute;
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.radio-button__label {
+  display: inline-block;
+  padding-left: 30px;
+  margin-bottom: 10px;
+  position: relative;
+  font-size: 15px;
+  color: black;
+  font-weight: 600;
+  cursor: pointer;
+  text-transform: uppercase;
+  transition: all 0.3s ease;
+}
+
+.radio-button__custom {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 2px solid #555;
+  transition: all 0.3s ease;
+}
+
+.radio-button__input:checked + .radio-button__label .radio-button__custom {
+  background-color: #4c8bf5;
+  border-color: transparent;
+  transform: scale(0.8);
+  box-shadow: 0 0 20px #4c8bf580;
+}
+
+.radio-button__input:checked + .radio-button__label {
+  color: #4c8bf5;
+}
+
+.radio-button__label:hover .radio-button__custom {
+  transform: scale(1.2);
+  border-color: #4c8bf5;
+  box-shadow: 0 0 20px #4c8bf580;
+}
+
+
+
+
+
+
+
