@@ -1,10 +1,10 @@
 const express = require('express');
 const router = express.Router();
-const categoryController = require('../controllers/userController');
+const userController = require('../controllers/userController');
 
 /* GET users listing. */
-router.get('/', function (req, res, next) {
-  res.send('respond with a resource');
-});
+router.get('/admin', userController.adminView);
+router.post('/admin/createUser', userController.createUser);
+router.post('/admin/deleteUser', userController.deleteUser);
 
 module.exports = router;
