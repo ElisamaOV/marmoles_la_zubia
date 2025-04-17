@@ -24,7 +24,7 @@
   background-image: url('/assets/carr3.jpg');
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center center;
+  background-position: top;
 }
 
 /* Ajuste de margen superior para dispositivos grandes si se requiere */
@@ -37,7 +37,7 @@
 .section-3 {
 
   .col2 {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(/assets/baño.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(/assets/1.jpg);
     background-position: center;
     background-size: cover;
     padding: 2rem;
@@ -52,4 +52,150 @@
   .col-3{
     background-color: #F6F6F6;
   }
+}
+
+.section-4 .sec4-col1, .section-4 .sec4-col2, .section-4 .sec4-col3, .section-4 .sec4-col4, 
+.section-4 .sec4-col5, .section-4 .sec4-col6, .section-4 .sec4-col7, .section-4 .sec4-col8, 
+.section-4 .sec4-col9 {
+  cursor: pointer;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 400px;
+  height: 400px;
+  position: relative;
+}
+
+.section-4 .sec4-col1 {
+  background-image: url(/assets/baños.jpg);
+}
+.section-4 .sec4-col2 {
+  background-image: url(/assets/cocinamarmol.jpg);
+}
+.section-4 .sec4-col3 {
+  background-image: url(/assets/escaleramarmol.jpg);
+}
+.section-4 .sec4-col4 {
+  background-image: url(/assets/portal.jpg);
+}
+.section-4 .sec4-col5 {
+  background-image: url(/assets/lapidaboveda.jpg);
+}
+.section-4 .sec4-col6 {
+  background-image: url(/assets/mueble.jpg);
+}
+.section-4 .sec4-col7 {
+  background-image: url(/assets/platobaño.jpg);
+}
+.section-4 .sec4-col8 {
+  background-image: url(/assets/panteonmarmol.jpg);
+}
+.section-4 .sec4-col9 {
+  background-image: url(/assets/soleriamarmol.jpg);
+}
+
+/* Capa oscura y texto */
+.section-4 .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Capa oscura */
+  opacity: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: opacity 0.1s ease;
+}
+
+.section-4 .texto {
+  color: white;
+  font-size: 1.5rem;
+  text-align: center;
+  font-weight: bold;
+}
+
+.section-4 .sec4-col1:hover .overlay, 
+.section-4 .sec4-col2:hover .overlay, 
+.section-4 .sec4-col3:hover .overlay, 
+.section-4 .sec4-col4:hover .overlay, 
+.section-4 .sec4-col5:hover .overlay, 
+.section-4 .sec4-col6:hover .overlay, 
+.section-4 .sec4-col7:hover .overlay, 
+.section-4 .sec4-col8:hover .overlay, 
+.section-4 .sec4-col9:hover .overlay {
+  opacity: 1; /* Muestra la capa oscura y el texto al pasar el ratón */
+}
+
+/* section 5 */
+
+.section-5 .sec5-col1, .section-5 .sec5-col2, .section-5 .sec5-col3, .section-5 .sec5-col4, 
+.section-5 .sec5-col5, .section-5 .sec5-col6, .section-5 .sec5-col7, .section-5 .sec5-col8 {
+  cursor: pointer;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 400px;
+  height: 400px;
+  position: relative;
+}
+
+.section-5 .sec5-col1 {
+  background-image: url(/assets/marmoles/blancocarrara.jpg);
+}
+.section-5 .sec5-col2 {
+  background-image: url(/assets/marmoles/blancomacael.jpg);
+}
+.section-5 .sec5-col3 {
+  background-image: url(/assets/marmoles/cremamarfil.jpg);
+}
+.section-5 .sec5-col4 {
+  background-image: url(/assets/marmoles/grisceghin.jpg);
+}
+.section-5 .sec5-col5 {
+  background-image: url(/assets/marmoles/rojoceghin.jpg);
+}
+.section-5 .sec5-col6 {
+  background-image: url(/assets/marmoles/travertino.jpg);
+}
+.section-5 .sec5-col7 {
+  background-image: url(/assets/marmoles/verdeolivo.jpg);
+}
+.section-5 .sec5-col8 {
+  background-image: url(/assets/marmoles/verdeubatuba.jpg);
+}
+
+
+/* Capa oscura y texto */
+.section-5 .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Capa oscura */
+  opacity: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: opacity 0.1s ease;
+}
+
+.section-5 .texto {
+  color: white;
+  font-size: 1.5rem;
+  text-align: center;
+  font-weight: bold;
+}
+
+.section-5 .sec5-col1:hover .overlay, 
+.section-5 .sec5-col2:hover .overlay, 
+.section-5 .sec5-col3:hover .overlay, 
+.section-5 .sec5-col4:hover .overlay, 
+.section-5 .sec5-col5:hover .overlay, 
+.section-5 .sec5-col6:hover .overlay, 
+.section-5 .sec5-col7:hover .overlay, 
+.section-5 .sec5-col8:hover .overlay {
+  opacity: 1; /* Muestra la capa oscura y el texto al pasar el ratón */
 }
