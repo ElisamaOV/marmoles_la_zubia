@@ -4,12 +4,12 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Home</title>
-    <link rel="stylesheet" href="/stylesheets/style.css" />
+    <link rel="stylesheet" href="/stylesheets/admin.css" />
     <%- include('modules/links.ejs') %>
   </head>
   <body class="d-flex flex-column min-vh-100">
     <%- include('modules/navbar.ejs') %>
-    <main class="flex-fill">
+    <main class="flex-fill overflow-hidden">
       <h1 class="pt-5 text-center">Panel de administrador</h1>
       <h3 class="pt-3 text-center">Gestion de usuarios</h3>
       <section class="section-1">
@@ -122,8 +122,73 @@
       <section class="section-2 mt-5 py-5">
         <div class="container-fluid g-0">
           <h4 class="bg-black py-5 text-white text-center">Categorías</h4>
-          <div class="row">
-            <div class="col"></div>
+          <div class="row row-gap-4 pt-4">
+            <div class="col-12 col-md-4 d-flex justify-content-center">
+              <a class="text-decoration-none">
+                <div class="card shadow-sm">
+                  <div class="card-body text-center">
+                    <h5 class="card-title">
+                      Elementos de Decoración y Arquitectura
+                    </h5>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="col-12 col-md-4 d-flex justify-content-center">
+              <a class="text-decoration-none">
+                <div class="card shadow-sm">
+                  <div
+                    class="card-body d-flex justify-content-center align-items-center text-center"
+                  >
+                    <h5 class="card-title">Baños y Mobiliario</h5>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="col-12 col-md-4 d-flex justify-content-center">
+              <a class="text-decoration-none">
+                <div class="card shadow-sm">
+                  <div
+                    class="card-body d-flex justify-content-center align-items-center text-center"
+                  >
+                    <h5 class="card-title">Fuentes y Elementos de Agua</h5>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="col-12 col-md-4 d-flex justify-content-center">
+              <a class="text-decoration-none">
+                <div class="card shadow-sm">
+                  <div
+                    class="card-body d-flex justify-content-center align-items-center text-center"
+                  >
+                    <h5 class="card-title">Arte Funerario y Monumentos</h5>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="col-12 col-md-4 d-flex justify-content-center">
+              <a class="text-decoration-none">
+                <div class="card shadow-sm">
+                  <div
+                    class="card-body d-flex justify-content-center align-items-center text-center"
+                  >
+                    <h5 class="card-title">Mobiliario y Elementos Diversos</h5>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="col-12 col-md-4 d-flex justify-content-center">
+              <a class="text-decoration-none">
+                <div class="card shadow-sm">
+                  <div
+                    class="card-body d-flex justify-content-center align-items-center text-center"
+                  >
+                    <h5 class="card-title">Decoración y Regalos Artesanales</h5>
+                  </div>
+                </div>
+              </a>
+            </div>
           </div>
         </div>
       </section>
