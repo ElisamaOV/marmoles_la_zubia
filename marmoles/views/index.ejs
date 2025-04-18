@@ -1,444 +1,613 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="es">
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Home</title>
-    <link rel="stylesheet" href="/stylesheets/style.css">
+    <link rel="stylesheet" href="/stylesheets/style.css" />
     <%- include('modules/links.ejs') %>
   </head>
   <body>
     <%- include('modules/navbar.ejs') %>
     <!-- section 1 carrusel-->
-     <!-- Carousel wrapper -->
-<main>
-  <div id="introCarousel" class="carousel slide carousel-fade shadow" data-bs-ride="carousel">
-    <!-- Indicators -->
-    <div class="carousel-indicators">
-      <button type="button" data-bs-target="#introCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-      <button type="button" data-bs-target="#introCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
-      <button type="button" data-bs-target="#introCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
-    </div>
-  
-    <!-- Inner -->
-    <div class="carousel-inner">
-      <!-- Slide 1 -->
-      <div class="carousel-item active">
-        <!-- Se utiliza un div para el efecto overlay -->
-       <div class="d-flex justify-content-center align-items-center h-100" style="background-color: rgba(0, 0, 0, 0.6);">
-          <div class="text-white fs-5 d-none d-md-block text-center">
-            <h2>Encimeras a medida para cocinas y baños</h2>
-            <h4>Nos encargamos de todo: medición, fabricación e instalación con acabados a tu gusto.</h4>
+    <!-- Carousel wrapper -->
+    <main>
+      <div
+        id="introCarousel"
+        class="carousel slide carousel-fade shadow"
+        data-bs-ride="carousel"
+      >
+        <!-- Indicators -->
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#introCarousel"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#introCarousel"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#introCarousel"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"
+          ></button>
+        </div>
+
+        <!-- Inner -->
+        <div class="carousel-inner">
+          <!-- Slide 1 -->
+          <div class="carousel-item active">
+            <!-- Se utiliza un div para el efecto overlay -->
+            <div
+              class="d-flex justify-content-center align-items-center h-100"
+              style="background-color: rgba(0, 0, 0, 0.6)"
+            >
+              <div class="text-white fs-5 d-none d-md-block text-center">
+                <h2>Encimeras a medida para cocinas y baños</h2>
+                <h4>
+                  Nos encargamos de todo: medición, fabricación e instalación
+                  con acabados a tu gusto.
+                </h4>
+              </div>
+            </div>
+          </div>
+
+          <!-- Slide 2 -->
+          <div class="carousel-item">
+            <div
+              class="d-flex justify-content-center align-items-center h-100"
+              style="background-color: rgba(0, 0, 0, 0.6)"
+            >
+              <div class="text-white text-center">
+                <h1 class="mb-3">Transformamos tus ideas en mármol</h1>
+                <h5 class="mb-4">
+                  Fuentes, columnas y chimeneas en mármol con diseños
+                  personalizados.
+                </h5>
+                <a
+                  class="btn btn-outline-light btn-lg m-2"
+                  href="https://www.youtube.com/watch?v=c9B4TPnak1A"
+                  role="button"
+                  target="_blank"
+                  rel="nofollow"
+                  >Nuestros Productos</a
+                >
+                <a
+                  class="btn btn-outline-light btn-lg m-2"
+                  href="https://mdbootstrap.com/docs/standard/"
+                  role="button"
+                  target="_blank"
+                  >Regalos</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <!-- Slide 3 -->
+          <div class="carousel-item">
+            <div
+              class="d-flex justify-content-center align-items-center h-100"
+              style="background-color: rgba(0, 0, 0, 0.6)"
+            >
+              <div class="text-white d-none d-md-block">
+                <h2>
+                  Columnas y pilares en mármol con diseños únicos y
+                  personalizados.
+                </h2>
+                <a
+                  class="btn btn-outline-light btn-lg m-2"
+                  href="https://mdbootstrap.com/docs/standard/content-styles/masks/"
+                  role="button"
+                  target="_blank"
+                  >Nuestros Servicios</a
+                >
+              </div>
+            </div>
           </div>
         </div>
+        <!-- End Inner -->
+
+        <!-- Controls -->
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#introCarousel"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#introCarousel"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
       </div>
-  
-      <!-- Slide 2 -->
-      <div class="carousel-item">
-        <div class="d-flex justify-content-center align-items-center h-100" style="background-color: rgba(0, 0, 0, 0.6);">
-          <div class="text-white text-center">
-            <h1 class="mb-3">Transformamos tus ideas en mármol</h1>
-            <h5 class="mb-4">Fuentes, columnas y chimeneas en mármol con diseños personalizados.</h5>
-            <a class="btn btn-outline-light btn-lg m-2" href="https://www.youtube.com/watch?v=c9B4TPnak1A" role="button" target="_blank" rel="nofollow">Nuestros Productos</a>
-            <a class="btn btn-outline-light btn-lg m-2" href="https://mdbootstrap.com/docs/standard/" role="button" target="_blank">Regalos</a>
-          </div>
-        </div>
-  
-      </div>
-  
-      <!-- Slide 3 -->
-      <div class="carousel-item">
-        <div class="d-flex justify-content-center align-items-center h-100" style="background-color: rgba(0, 0, 0, 0.6);">
-          <div class="text-white d-none d-md-block">
-            <h2>Columnas y pilares en mármol con diseños únicos y personalizados.</h2>
-            <a class="btn btn-outline-light btn-lg m-2" href="https://mdbootstrap.com/docs/standard/content-styles/masks/" role="button" target="_blank">Nuestros Servicios</a>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- End Inner -->
-  
-    <!-- Controls -->
-    <button class="carousel-control-prev" type="button" data-bs-target="#introCarousel" data-bs-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Previous</span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#introCarousel" data-bs-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Next</span>
-    </button>
-  </div>
-  <!-- End Carousel wrapper -->
-  <!-- section2 -->
-   <section>
-    <div class="container-xxl">
-      <div class="row">
-          <div class="col-12 col-md-12 col-lg-12 text-center p-5">
-            <h2 class="fw-bold mb-4">Desde hace más de 40 años, damos forma a lo que imaginas.
-              <br>
-              Cada proyecto es único, cada pieza, una obra en piedra.          
+      <!-- End Carousel wrapper -->
+      <!-- section2 -->
+      <section>
+        <div class="container-xxl">
+          <div class="row">
+            <div class="col-12 col-md-12 col-lg-12 text-center p-5">
+              <h2 class="fw-bold mb-4">
+                Desde hace más de 40 años, damos forma a lo que imaginas.
+                <br />
+                Cada proyecto es único, cada pieza, una obra en piedra.
               </h2>
               <p>
-                <strong>Mármoles La Zubia</strong> es una empresa andaluza con 
-                <strong>más de 40 años de experiencia</strong> en la transformación y comercialización de 
-                <strong>mármol, granito y piedra natural</strong> para todo tipo de proyectos.
+                <strong>Mármoles La Zubia</strong> es una empresa andaluza con
+                <strong>más de 40 años de experiencia</strong> en la
+                transformación y comercialización de
+                <strong>mármol, granito y piedra natural</strong> para todo tipo
+                de proyectos.
               </p>
-              
+
               <p>
-                Contamos con una <strong>amplia experiencia</strong> que nos permite abordar cada trabajo 
-                con <strong>eficiencia</strong>, cuidando cada detalle desde el diseño hasta la 
+                Contamos con una <strong>amplia experiencia</strong> que nos
+                permite abordar cada trabajo con <strong>eficiencia</strong>,
+                cuidando cada detalle desde el diseño hasta la
                 <strong>instalación final</strong>.
               </p>
-              
+
               <p>
-                <strong>Arquitectos, diseñadores y profesionales del sector</strong> confían en nosotros por la 
-                <strong>calidad de nuestros materiales</strong> y el <strong>compromiso</strong> que ofrecemos en cada proyecto.
+                <strong
+                  >Arquitectos, diseñadores y profesionales del sector</strong
+                >
+                confían en nosotros por la
+                <strong>calidad de nuestros materiales</strong> y el
+                <strong>compromiso</strong> que ofrecemos en cada proyecto.
               </p>
+            </div>
           </div>
-      </div>
-    </div>
-   </section>
-  <!-- section 3 -->
-   <section class="section-3">
-    <div class="container-fluid">
-      <div class="row">
-        <div class="col-12 col-md-6 col-lg-7 col2">
         </div>
-        <div class="col-12 col-md-6 col-lg-5 p-3 px-5 justify-content-center align-content-center col-3">
-          <h4 class="fw-bold mb-3"> Diseña con libertad, nosotros lo materializamos en piedra</h4>
-          <p>
-            Trabajamos todo tipo de <strong>piedra natural</strong>: 
-            <strong>Silestone</strong>, <strong>Compac</strong>, <strong>Quarella</strong>, 
-            <strong>mármol</strong> y <strong>granito</strong>, con sus diferentes acabados: 
-            <strong>brillo</strong>, <strong>satinado</strong>, <strong>envejecido</strong>...
-          </p>
-          
-          <p>
-            Nos encargamos de la <strong>medición</strong>, <strong>ejecución</strong> y 
-            <strong>colocación</strong>.
-          </p>
-        </div>
-      </div>
-    </div>
-   </section>
-   <!-- Section-4 Mármoles -->
+      </section>
+      <!-- section 3 -->
+      <section class="section-3">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-12 col-md-6 col-lg-7 col2"></div>
+            <div
+              class="col-12 col-md-6 col-lg-5 p-3 px-5 justify-content-center align-content-center col-3"
+            >
+              <h4 class="fw-bold mb-3">
+                Diseña con libertad, nosotros lo materializamos en piedra
+              </h4>
+              <p>
+                Trabajamos todo tipo de <strong>piedra natural</strong>:
+                <strong>Silestone</strong>, <strong>Compac</strong>,
+                <strong>Quarella</strong>, <strong>mármol</strong> y
+                <strong>granito</strong>, con sus diferentes acabados:
+                <strong>brillo</strong>, <strong>satinado</strong>,
+                <strong>envejecido</strong>...
+              </p>
 
-   <!-- section-4 -->
-   <section class="section-4 my-5">
-    <div class="container-xxl">
-      <div class="row text-center justify-content-center align-content-center px-5">
-        <h2 class="my-4 fw-bold">Aplicaciones del Mármol y la Piedra Natural</h2>
-        <p>
-          El <strong>mármol</strong> y la <strong>piedra natural</strong> no solo añaden un 
-          <strong>toque de sofisticación y elegancia</strong>, sino que también brindan una 
-          <strong>durabilidad incomparable</strong>, lo que los convierte en una 
-          <em>opción ideal para cualquier proyecto</em>.
-        </p>
-        
-        <p>
-          Ya sea que estés <strong>renovando tu hogar</strong>, 
-          <strong>construyendo un nuevo espacio</strong> o 
-          <strong>creando detalles únicos</strong>, estos materiales transformarán tu visión 
-          en una <em>realidad atemporal</em>.
-        </p>
-        
-        <p>
-          Con una <strong>amplia variedad de texturas, colores y acabados</strong>, el mármol y la piedra natural 
-          ofrecen <strong>soluciones personalizadas</strong> que se adaptan perfectamente a tus necesidades, asegurando 
-          que cada rincón de tu proyecto refleje <strong>calidad y estilo</strong>.
-        </p>
-        
-        <p>
-          <strong>¡Haz de tu espacio un lugar memorable</strong> con la <em>belleza natural</em> 
-          de estos <strong>materiales excepcionales</strong>!
-        </p>
-      </div>
-    </div>
+              <p>
+                Nos encargamos de la <strong>medición</strong>,
+                <strong>ejecución</strong> y <strong>colocación</strong>.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Section-4 Mármoles -->
+
+      <!-- section-4 -->
+      <section class="section-4 my-5">
         <div class="container-xxl">
-          <div class="row text-center justify-content-center align-content-center">
-        <div class="col-6 col-md-4 col-lg-4 sec4-col1">
-          <div class="overlay">
-            <div class="texto">Baños</div>
-          </div>
-        </div>
-        <div class="col-6 col-md-4 col-lg-4 sec4-col2">
-          <div class="overlay">
-            <div class="texto">Cocinas</div>
-          </div>
-        </div>
-        <div class="col-6 col-md-4 col-lg-4 sec4-col3">
-          <div class="overlay">
-            <div class="texto">Escaleras y balustradas</div>
-          </div>
-        </div>
-        <div class="col-6 col-md-4 col-lg-4 sec4-col4">
-          <div class="overlay">
-            <div class="texto">Portales y Fachadas</div>
-          </div>
-        </div>
-        <div class="col-6 col-md-4 col-lg-4 sec4-col5">
-          <div class="overlay">
-            <div class="texto">Lápidas y bóvedas</div>
-          </div>
-        </div>
-        <div class="col-6 col-md-4 col-lg-4 sec4-col6">
-          <div class="overlay">
-            <div class="texto">Muebles de baño</div>
-          </div>
-        </div>
-        <div class="col-6 col-md-4 col-lg-4 sec4-col7">
-          <div class="overlay">
-            <div class="texto">Platos de ducha</div>
-          </div>
-        </div>
-        <div class="col-6 col-md-4 col-lg-4 sec4-col8">
-          <div class="overlay">
-            <div class="texto">Panteones</div>
-          </div>
-        </div>
-        <div class="col-6 col-md-4 col-lg-4 sec4-col9">
-          <div class="overlay">
-            <div class="texto">Solerías y zócalos</div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
+          <div
+            class="row text-center justify-content-center align-content-center px-5"
+          >
+            <h2 class="my-4 fw-bold">
+              Aplicaciones del Mármol y la Piedra Natural
+            </h2>
+            <p>
+              El <strong>mármol</strong> y la <strong>piedra natural</strong> no
+              solo añaden un
+              <strong>toque de sofisticación y elegancia</strong>, sino que
+              también brindan una <strong>durabilidad incomparable</strong>, lo
+              que los convierte en una
+              <em>opción ideal para cualquier proyecto</em>.
+            </p>
 
-  <!-- section 5 -->
-   <section class="section-5 py-5">
-    <div class="container-xxl">
-      <div class="row text-center justify-content-center align-content-center gap-2 px-5">
-        <h2 class="my-4 fw-bold">Materiales Premium para Proyectos Únicos</h2>
-        <p> Dale a tus proyectos el <strong>toque de distinción que merecen</strong> con nuestra <strong>exclusiva selección de mármoles, granitos y acabados de alta gama.</strong></p>
-         <p>Cada material ha sido elegido por su <strong>durabilidad</strong>, <strong>belleza</strong> y <strong>versatilidad</strong>, garantizando <em>resultados espectaculares que perduran en el tiempo.</em></p>
-          <p>Ya sea que busques <strong>elegancia clásica</strong>, un <strong>acabado moderno</strong> o la <strong>solidez del granito</strong>, tenemos la opción perfecta para transformar tu espacio en algo<em> excepcional</em>.</p>
-           <p><strong>¡Haz que cada detalle cuente</strong> y <strong>eleva la calidad de tu proyecto</strong> con nuestros <em>materiales premium</em>!</p>
-        <div class="col-12 d-flex justify-content-center align-content-center pt-3">
-          <div class="radio-button-container">
-            <div class="radio-button">
-              <input type="radio" class="radio-button__input" id="radio-marmoles" name="radio-group">
-              <label class="radio-button__label" for="radio-marmoles">
-                <span class="radio-button__custom"></span>
-                Mármoles
-              </label>
+            <p>
+              Ya sea que estés <strong>renovando tu hogar</strong>,
+              <strong>construyendo un nuevo espacio</strong> o
+              <strong>creando detalles únicos</strong>, estos materiales
+              transformarán tu visión en una <em>realidad atemporal</em>.
+            </p>
+
+            <p>
+              Con una
+              <strong>amplia variedad de texturas, colores y acabados</strong>,
+              el mármol y la piedra natural ofrecen
+              <strong>soluciones personalizadas</strong> que se adaptan
+              perfectamente a tus necesidades, asegurando que cada rincón de tu
+              proyecto refleje <strong>calidad y estilo</strong>.
+            </p>
+
+            <p>
+              <strong>¡Haz de tu espacio un lugar memorable</strong> con la
+              <em>belleza natural</em> de estos
+              <strong>materiales excepcionales</strong>!
+            </p>
+          </div>
+        </div>
+        <div class="container-xxl">
+          <div
+            class="row text-center justify-content-center align-content-center"
+          >
+            <div class="col-6 col-md-4 col-lg-4 sec4-col1">
+              <div class="overlay">
+                <div class="texto">Baños</div>
+              </div>
             </div>
-            <div class="radio-button">
-              <input type="radio" class="radio-button__input" id="radio-granitos" name="radio-group">
-              <label class="radio-button__label" for="radio-granitos">
-                <span class="radio-button__custom"></span>
-                Granitos
-              </label>
+            <div class="col-6 col-md-4 col-lg-4 sec4-col2">
+              <div class="overlay">
+                <div class="texto">Cocinas</div>
+              </div>
             </div>
-            <div class="radio-button">
-              <input type="radio" class="radio-button__input" id="radio-acabados" name="radio-group">
-              <label class="radio-button__label" for="radio-acabados">
-                <span class="radio-button__custom"></span>
-                Acabados
-              </label>
+            <div class="col-6 col-md-4 col-lg-4 sec4-col3">
+              <div class="overlay">
+                <div class="texto">Escaleras y balustradas</div>
+              </div>
+            </div>
+            <div class="col-6 col-md-4 col-lg-4 sec4-col4">
+              <div class="overlay">
+                <div class="texto">Portales y Fachadas</div>
+              </div>
+            </div>
+            <div class="col-6 col-md-4 col-lg-4 sec4-col5">
+              <div class="overlay">
+                <div class="texto">Lápidas y bóvedas</div>
+              </div>
+            </div>
+            <div class="col-6 col-md-4 col-lg-4 sec4-col6">
+              <div class="overlay">
+                <div class="texto">Muebles de baño</div>
+              </div>
+            </div>
+            <div class="col-6 col-md-4 col-lg-4 sec4-col7">
+              <div class="overlay">
+                <div class="texto">Platos de ducha</div>
+              </div>
+            </div>
+            <div class="col-6 col-md-4 col-lg-4 sec4-col8">
+              <div class="overlay">
+                <div class="texto">Panteones</div>
+              </div>
+            </div>
+            <div class="col-6 col-md-4 col-lg-4 sec4-col9">
+              <div class="overlay">
+                <div class="texto">Solerías y zócalos</div>
+              </div>
             </div>
           </div>
         </div>
+      </section>
 
-      </div>
-    </div>
+      <!-- section 5 -->
+      <section class="section-5 py-5">
+        <div class="container-xxl">
+          <div
+            class="row text-center justify-content-center align-content-center gap-2 px-5"
+          >
+            <h2 class="my-4 fw-bold">
+              Materiales Premium para Proyectos Únicos
+            </h2>
+            <p>
+              Dale a tus proyectos el
+              <strong>toque de distinción que merecen</strong> con nuestra
+              <strong
+                >exclusiva selección de mármoles, granitos y acabados de alta
+                gama.</strong
+              >
+            </p>
+            <p>
+              Cada material ha sido elegido por su <strong>durabilidad</strong>,
+              <strong>belleza</strong> y <strong>versatilidad</strong>,
+              garantizando
+              <em>resultados espectaculares que perduran en el tiempo.</em>
+            </p>
+            <p>
+              Ya sea que busques <strong>elegancia clásica</strong>, un
+              <strong>acabado moderno</strong> o la
+              <strong>solidez del granito</strong>, tenemos la opción perfecta
+              para transformar tu espacio en algo<em> excepcional</em>.
+            </p>
+            <p>
+              <strong>¡Haz que cada detalle cuente</strong> y
+              <strong>eleva la calidad de tu proyecto</strong> con nuestros
+              <em>materiales premium</em>!
+            </p>
+            <div
+              class="col-12 d-flex justify-content-center align-content-center pt-3"
+            >
+              <div class="radio-button-container">
+                <div class="radio-button">
+                  <input
+                    type="radio"
+                    class="radio-button__input"
+                    id="radio-marmoles"
+                    name="radio-group"
+                  />
+                  <label class="radio-button__label" for="radio-marmoles">
+                    <span class="radio-button__custom"></span>
+                    Mármoles
+                  </label>
+                </div>
+                <div class="radio-button">
+                  <input
+                    type="radio"
+                    class="radio-button__input"
+                    id="radio-granitos"
+                    name="radio-group"
+                  />
+                  <label class="radio-button__label" for="radio-granitos">
+                    <span class="radio-button__custom"></span>
+                    Granitos
+                  </label>
+                </div>
+                <div class="radio-button">
+                  <input
+                    type="radio"
+                    class="radio-button__input"
+                    id="radio-acabados"
+                    name="radio-group"
+                  />
+                  <label class="radio-button__label" for="radio-acabados">
+                    <span class="radio-button__custom"></span>
+                    Acabados
+                  </label>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
 
         <div class="container-xxl">
-          <div class="row text-center justify-content-center align-content-center gap-2">
-        <!-- categoria de marmoles -->
-        <div id="marmoles" class="category-container py-5">
-          <div class="row gap-2 justify-content-center align-content-center">
-            <div class="col-6 col-md-4 col-lg-4 sec5-col1">
-              <div class="overlay">
-                <div class="texto">Blanco Carrara</div>
+          <div
+            class="row text-center justify-content-center align-content-center gap-2"
+          >
+            <!-- categoria de marmoles -->
+            <div id="marmoles" class="category-container py-5">
+              <div
+                class="row gap-2 justify-content-center align-content-center"
+              >
+                <div class="col-6 col-md-4 col-lg-4 sec5-col1">
+                  <div class="overlay">
+                    <div class="texto">Blanco Carrara</div>
+                  </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-4 sec5-col2">
+                  <div class="overlay">
+                    <div class="texto">Blanco Macael</div>
+                  </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-4 sec5-col3">
+                  <div class="overlay">
+                    <div class="texto">Crema Marfil</div>
+                  </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-4 sec5-col4">
+                  <div class="overlay">
+                    <div class="texto">Gris Cehin</div>
+                  </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-4 sec5-col5">
+                  <div class="overlay">
+                    <div class="texto">Rojo Ceghin</div>
+                  </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-4 sec5-col6">
+                  <div class="overlay">
+                    <div class="texto">Travertino</div>
+                  </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-4 sec5-col7">
+                  <div class="overlay">
+                    <div class="texto">Verde Olivo</div>
+                  </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-4 sec5-col8">
+                  <div class="overlay">
+                    <div class="texto">Verde Ubatuba</div>
+                  </div>
+                </div>
               </div>
             </div>
-            <div class="col-6 col-md-4 col-lg-4 sec5-col2">
-              <div class="overlay">
-                <div class="texto">Blanco Macael</div>
+
+            <!-- categoria de granitos -->
+            <div
+              id="granitos"
+              class="category-container py-5"
+              style="display: none"
+            >
+              <div
+                class="row gap-2 justify-content-center align-content-center"
+              >
+                <div class="col-6 col-md-4 col-lg-4 sec5-col2-1">
+                  <div class="overlay">
+                    <div class="texto">Azul Noche</div>
+                  </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-4 sec5-col2-2">
+                  <div class="overlay">
+                    <div class="texto">Blanco Cristal</div>
+                  </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-4 sec5-col2-3">
+                  <div class="overlay">
+                    <div class="texto">Crema Porriño</div>
+                  </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-4 sec5-col2-4">
+                  <div class="overlay">
+                    <div class="texto">Labrador Claro</div>
+                  </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-4 sec5-col2-5">
+                  <div class="overlay">
+                    <div class="texto">Labrador Oscuro</div>
+                  </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-4 sec5-col2-6">
+                  <div class="overlay">
+                    <div class="texto">Negro Intenso</div>
+                  </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-4 sec5-col2-7">
+                  <div class="overlay">
+                    <div class="texto">Negro Sudáfrica</div>
+                  </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-4 sec5-col2-8">
+                  <div class="overlay">
+                    <div class="texto">Rosa Porriño</div>
+                  </div>
+                </div>
               </div>
             </div>
-            <div class="col-6 col-md-4 col-lg-4 sec5-col3">
-              <div class="overlay">
-                <div class="texto">Crema Marfil</div>
-              </div>
-            </div>
-            <div class="col-6 col-md-4 col-lg-4 sec5-col4">
-              <div class="overlay">
-                <div class="texto">Gris Cehin</div>
-              </div>
-            </div>
-            <div class="col-6 col-md-4 col-lg-4 sec5-col5">
-              <div class="overlay">
-                <div class="texto">Rojo Ceghin</div>
-              </div>
-            </div>
-            <div class="col-6 col-md-4 col-lg-4 sec5-col6">
-              <div class="overlay">
-                <div class="texto">Travertino</div>
-              </div>
-            </div>
-            <div class="col-6 col-md-4 col-lg-4 sec5-col7">
-              <div class="overlay">
-                <div class="texto">Verde Olivo</div>
-              </div>
-            </div>
-            <div class="col-6 col-md-4 col-lg-4 sec5-col8">
-              <div class="overlay">
-                <div class="texto">Verde Ubatuba</div>
+
+            <!-- categoria de acabados -->
+            <div
+              id="acabados"
+              class="category-container py-5"
+              style="display: none"
+            >
+              <div
+                class="row gap-2 justify-content-center align-content-center"
+              >
+                <div class="col-6 col-md-4 col-lg-4 sec5-col3-1">
+                  <div class="overlay">
+                    <div class="texto">Abujardado</div>
+                  </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-4 sec5-col3-2">
+                  <div class="overlay">
+                    <div class="texto">Abujardado</div>
+                  </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-4 sec5-col3-3">
+                  <div class="overlay">
+                    <div class="texto">Apomazado</div>
+                  </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-4 sec5-col3-4">
+                  <div class="overlay">
+                    <div class="texto">Apomazado</div>
+                  </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-4 sec5-col3-5">
+                  <div class="overlay">
+                    <div class="texto">Envejecido</div>
+                  </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-4 sec5-col3-6">
+                  <div class="overlay">
+                    <div class="texto">Mate</div>
+                  </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-4 sec5-col3-7">
+                  <div class="overlay">
+                    <div class="texto">Pulido</div>
+                  </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-4 sec5-col3-8">
+                  <div class="overlay">
+                    <div class="texto">Pulido</div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
         </div>
-
-        <!-- categoria de granitos -->
-         <div id="granitos" class="category-container py-5" style="display: none;">
-          <div class="row gap-2 justify-content-center align-content-center">
-            <div class="col-6 col-md-4 col-lg-4 sec5-col2-1">
-              <div class="overlay">
-                <div class="texto">Azul Noche</div>
-              </div>
+      </section>
+      <!-- section 6 -->
+      <section class="section-6">
+        <div class="container-xxl py-5">
+          <div
+            class="row text-center justify-content-center align-content-center"
+          >
+            <div class="col-12 col1sec6 mb-2">
+              <h3 class="fw-bold mb-4">
+                Es momento de transformar tu visión en realidad
+              </h3>
+              <p class="my-3">
+                En <strong>Mármoles La Zubia</strong> estamos aquí para
+                ofrecerte <strong>asesoramiento experto</strong> y
+                proporcionarte toda la información que necesitas.
+                <br />
+                <strong
+                  >Juntos, haremos de tu proyecto un éxito duradero y de
+                  calidad.</strong
+                >
+              </p>
+              <button
+                class="btn my-3"
+                onclick="window.location.href='/contact'"
+              >
+                Contacto
+              </button>
             </div>
-            <div class="col-6 col-md-4 col-lg-4 sec5-col2-2">
-              <div class="overlay">
-                <div class="texto">Blanco Cristal</div>
-              </div>
-            </div>
-            <div class="col-6 col-md-4 col-lg-4 sec5-col2-3">
-              <div class="overlay">
-                <div class="texto">Crema Porriño</div>
-              </div>
-            </div>
-            <div class="col-6 col-md-4 col-lg-4 sec5-col2-4">
-              <div class="overlay">
-                <div class="texto">Labrador Claro</div>
-              </div>
-            </div>
-            <div class="col-6 col-md-4 col-lg-4 sec5-col2-5">
-              <div class="overlay">
-                <div class="texto">Labrador Oscuro</div>
-              </div>
-            </div>
-            <div class="col-6 col-md-4 col-lg-4 sec5-col2-6">
-              <div class="overlay">
-                <div class="texto">Negro Intenso</div>
-              </div>
-            </div>
-            <div class="col-6 col-md-4 col-lg-4 sec5-col2-7">
-              <div class="overlay">
-                <div class="texto">Negro Sudáfrica</div>
-              </div>
-            </div>
-            <div class="col-6 col-md-4 col-lg-4 sec5-col2-8">
-              <div class="overlay">
-                <div class="texto">Rosa Porriño</div>
-              </div>
-            </div>
+            <div class="col-12 colsec6 my-3"></div>
           </div>
-         </div>
-
-          <!-- categoria de acabados -->
-          <div id="acabados" class="category-container py-5" style="display: none;">
-            <div class="row gap-2 justify-content-center align-content-center">
-              <div class="col-6 col-md-4 col-lg-4 sec5-col3-1">
-                <div class="overlay">
-                  <div class="texto">Abujardado</div>
-                </div>
-              </div>
-              <div class="col-6 col-md-4 col-lg-4 sec5-col3-2">
-                <div class="overlay">
-                  <div class="texto">Abujardado</div>
-                </div>
-              </div>
-              <div class="col-6 col-md-4 col-lg-4 sec5-col3-3">
-                <div class="overlay">
-                  <div class="texto">Apomazado</div>
-                </div>
-              </div>
-              <div class="col-6 col-md-4 col-lg-4 sec5-col3-4">
-                <div class="overlay">
-                  <div class="texto">Apomazado</div>
-                </div>
-              </div>
-              <div class="col-6 col-md-4 col-lg-4 sec5-col3-5">
-                <div class="overlay">
-                  <div class="texto">Envejecido</div>
-                </div>
-              </div>
-              <div class="col-6 col-md-4 col-lg-4 sec5-col3-6">
-                <div class="overlay">
-                  <div class="texto">Mate</div>
-                </div>
-              </div>
-              <div class="col-6 col-md-4 col-lg-4 sec5-col3-7">
-                <div class="overlay">
-                  <div class="texto">Pulido</div>
-                </div>
-              </div>
-              <div class="col-6 col-md-4 col-lg-4 sec5-col3-8">
-                <div class="overlay">
-                  <div class="texto">Pulido</div>
-                </div>
-              </div>
-            </div>
-           </div>
-
-      </div>
-    </div>
-   </section>
-<!-- section 6 -->
-   <section class="section-6">
-    <div class="container-xxl py-5">
-      <div class="row text-center justify-content-center align-content-center">
-        <div class="col-12 col1sec6 mb-2">
-          <h3 class="fw-bold mb-4">Es momento de transformar tu visión en realidad</h3>
-          <p class="my-3">En <strong>Mármoles La Zubia</strong> estamos aquí para ofrecerte <strong>asesoramiento experto</strong> y proporcionarte toda la información que necesitas.
-          <br>
-          <strong>Juntos, haremos de tu proyecto un éxito duradero y de calidad.</strong></p>
-        <button class="btn my-3">Contacto</button>
         </div>
-        <div class="col-12 colsec6 my-3">
-        
-        </div>
-      </div>
-    </div>
-   </section>
-  
-</main>
-<%- include('modules/footer.ejs') %>
-     
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous">
+      </section>
+    </main>
+    <%- include('modules/footer.ejs') %>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      document.addEventListener('DOMContentLoaded', function () {
+        // Al cargar la página, asegurarse de que solo la categoría Mármoles se muestre
+        mostrarCategoria('marmoles');
+      });
+
+      // Escucha los cambios en los radio buttons
+      document
+        .getElementById('radio-marmoles')
+        .addEventListener('change', function () {
+          mostrarCategoria('marmoles');
+        });
+
+      document
+        .getElementById('radio-granitos')
+        .addEventListener('change', function () {
+          mostrarCategoria('granitos');
+        });
+
+      document
+        .getElementById('radio-acabados')
+        .addEventListener('change', function () {
+          mostrarCategoria('acabados');
+        });
+
+      function mostrarCategoria(categoria) {
+        // Ocultar todas las categorías
+        const categories = document.querySelectorAll('.category-container');
+        categories.forEach(function (category) {
+          category.style.display = 'none';
+        });
+
+        // Mostrar la categoría seleccionada
+        document.getElementById(categoria).style.display = 'block';
+      }
     </script>
-   <script>
-document.addEventListener("DOMContentLoaded", function() {
-  // Al cargar la página, asegurarse de que solo la categoría Mármoles se muestre
-  mostrarCategoria('marmoles');
-});
-
-// Escucha los cambios en los radio buttons
-document.getElementById('radio-marmoles').addEventListener('change', function() {
-  mostrarCategoria('marmoles');
-});
-
-document.getElementById('radio-granitos').addEventListener('change', function() {
-  mostrarCategoria('granitos');
-});
-
-document.getElementById('radio-acabados').addEventListener('change', function() {
-  mostrarCategoria('acabados');
-});
-
-function mostrarCategoria(categoria) {
-  // Ocultar todas las categorías
-  const categories = document.querySelectorAll('.category-container');
-  categories.forEach(function(category) {
-    category.style.display = 'none';
-  });
-  
-  // Mostrar la categoría seleccionada
-  document.getElementById(categoria).style.display = 'block';
-}
-
-   </script>
   </body>
 </html>
