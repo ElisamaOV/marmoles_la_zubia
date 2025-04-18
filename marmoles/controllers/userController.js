@@ -121,6 +121,49 @@ class UserController {
       }
     });
   };
+
+  editorView = (req, res) => {
+    res.render('editor');
+  };
+
+  showLogin = (req, res) => {
+    res.render('login', { advice: '' });
+  };
+
+  login = (req, res) => {
+    const { name, password } = req.body;
+    if (!name || !password) {
+      res.render('login', { advice: 'Falta uno de los campos' });
+    } else {
+      let sql = 'select * from user where name = ?';
+      connection.query(sql, [name], (err, result) => {
+        if (err) {
+          throw err;
+        } else {
+          if (result.length == 0) {
+            res.render('login', { advice: 'El usuario no existe' });
+          } else {
+            let hash = result[0].password;
+            bcrypt.compare(password, hash, (errHash, resultCompare) => {
+              if (errHash) {
+                throw errHash;
+              } else {
+                if (!resultCompare) {
+                  res.render('login', { advice: 'Contraseña incorrecta' });
+                } else {
+                  if (result[0].role == 1) {
+                    res.redirect('/user/admin');
+                  } else {
+                    res.redirect('/user/editor');
+                  }
+                }
+              }
+            });
+          }
+        }
+      });
+    }
+  };
 }
 
 module.exports = new UserController();
