@@ -8,7 +8,7 @@ class ServiceController {
         throw err;
       } else {
         console.log(result);
-        res.send('Hola');
+        res.render('categoryServices', {result});
       }
     });
   };
