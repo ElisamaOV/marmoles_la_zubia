@@ -1,13 +1,13 @@
 const connection = require('../config/db');
 
 class ProductsController {
-  showCatalogProducts = (req, res) => {
-    const sql = 'select * from products';
+  showCategoryProducts = (req, res) => {
+    const sql = 'select * from category';
     connection.query(sql, (err, result) => {
       if (err) {
         throw err;
       } else {
-        res.send('Estoy en productos');
+        res.render('categoryProducts', {result});
       }
     });
   };

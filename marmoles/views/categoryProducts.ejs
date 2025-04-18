@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>ListProducts</title>
+    <link rel="stylesheet" href="/stylesheets/cards.css" />
+    <%- include('modules/links.ejs') %>
+  </head>
+  <body>
+    <%- include('modules/navbar.ejs') %>
+    <main>
+      <section class="py-5">
+        <div class="container-xxl">
+          <div
+            class="row row-gap-5 justify-content-center align-items-center"
+          >
+            <% result.forEach((elem)=>{ %>
+            <div
+              class="col-12 col-sm-6 col-xl-4 d-flex flex-column justify-content-center align-items-center"
+            >
+              <div class="designer-card position-relative">
+                <img
+                  src="/images/categories/<%= elem.category_img ? elem.category_img : 'default.jpg' %>"
+                  class="designer-card-img"
+                  alt="Imagen de la categoría"
+                />
+                <div class="designer-card-overlay d-flex justify-content-center align-items-center">
+                  <h5 class="designer-card-title text-white text-center m-0">
+                    <%= `${elem.name}` %>
+                  </h5>
+                </div>
+              </div>
+            </div>
+            <% }) %>
+          </div>
+        </div>
+      </section>
+    </main>
+    <%- include('modules/footer.ejs') %>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
